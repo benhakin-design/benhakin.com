@@ -1,0 +1,178 @@
+@import "../base/buttons";
+@import "../base/fonts";
+@import "../base/globals";
+@import "../base/media-queries";
+@import "../base/settings";
+.work {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    @include media(media599) {
+        flex-direction: column;
+    }
+    &__selected {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 50px 50px 50px;
+        overflow: hidden;
+        span {
+            font-family: sat_med;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 13.5vw;
+            letter-spacing: -5px;
+            white-space: nowrap;
+            opacity: 0.1;
+            @include media(media599) {
+                font-size: 24vw;
+                line-height: 90px;
+                text-align: center;
+            }
+        }
+    }
+    &__block {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+        @include media(media599) {
+            flex-direction: column;
+        }
+        @include media(media1199) {
+            flex-direction: column;
+        }
+        .hover-img {
+            .project-img {
+                width: 700px;
+                height: auto;
+                margin-left: 50px;
+                z-index: 7;
+                @include media(media1199) {
+                    width: 100%;
+                    height: auto;
+                    padding: 0 50px;
+                    margin: 0px;
+                }
+                @include media(media599) {
+                    width: 100%;
+                    height: auto;
+                    padding: 0 25px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .project-info-role {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-left: 25px;
+        @include media(media1199) {
+            align-self: flex-start;
+            margin: 50px 0 0 50px;
+        }
+        @include media(media599) {
+            align-self: flex-start;
+            margin: 25px 0 0 25px;
+        }
+        .project-title {
+            font-size: $h3;
+            font-weight: normal;
+            color: $bone;
+            font-family: sat_med;
+            text-transform: uppercase;
+            z-index: 1;
+            letter-spacing: 0px;
+            &:hover {
+                // -webkit-text-fill-color: transparent;
+                // -webkit-text-stroke-width: 0.5px;
+                // -webkit-text-stroke-color: $bone;
+                opacity: 0.1;
+            }
+            @include media(media599) {
+                font-size: $h2-m;
+                letter-spacing: $l-s-m;
+            }
+        }
+        .project-role {
+            margin: 0;
+            margin-top: 10px;
+            font-family: sat_reg;
+            font-weight: normal;
+            font-size: $p;
+        }
+        .project-case-study {
+            margin-top: 15px;
+        }
+    }
+    &__project-2 {
+        margin-top: 100px;
+    }
+}
+
+.img-hover:hover~.project-title {
+    color: $golfscape-green;
+}
+
+.img-hover:hover.project-title {
+    color: $golfscape-green;
+}
+
+//golfscape
+.golfscape-images {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    &__image-row {
+        display: flex;
+        margin: 50px;
+        align-items: center;
+        @include media(media1199) {
+            margin: 25px 50px;
+        }
+        @include media(media599) {
+            margin: 12.5px 25px;
+        }
+        img {
+            width: 850px;
+            height: auto;
+            @include media(media1199) {
+                width: 100%;
+            }
+            @include media(media599) {
+                width: 100%;
+            }
+        }
+        .img-desktop {
+            width: 100%;
+            margin-bottom: 100px;
+            @include media(media599) {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+        }
+    }
+    .img-1 {
+        justify-content: flex-start;
+    }
+    .img-2 {
+        justify-content: flex-end;
+    }
+    .img-3 {
+        justify-content: flex-start;
+    }
+    .img-4 {
+        justify-content: center;
+    }
+}

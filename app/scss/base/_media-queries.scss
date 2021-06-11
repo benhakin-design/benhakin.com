@@ -1,0 +1,17 @@
+@mixin media($media) {
+    @if $media==media599 {
+        @media (max-width: 599px) {
+            @content;
+        }
+    }
+    @if $media==media1199 {
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $media==media1500 {
+        @media (min-width: 1500px) {
+            @content;
+        }
+    }
+}

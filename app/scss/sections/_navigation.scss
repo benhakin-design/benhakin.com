@@ -1,0 +1,57 @@
+@import "../base/buttons";
+@import "../base/fonts";
+@import "../base/globals";
+@import "../base/key-frames";
+@import "../base/media-queries";
+@import "../base/settings";
+.navigation {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: fixed;
+    &__logo {
+        position: absolute;
+        left: $margin-50;
+        top: $margin-50;
+        @include media(media1199) {
+            font-size: $logo-l;
+        }
+        @include media(media599) {
+            top: $margin-30;
+            left: $margin-30;
+        }
+        a {
+            font-size: $logo;
+            font-family: sat_reg;
+            font-weight: normal;
+            color: $bone;
+            letter-spacing: -0.5px;
+        }
+    }
+    &__btn {
+        position: absolute;
+        right: $margin-50;
+        top: $margin-50;
+        font-size: $logo;
+        font-family: sat_reg;
+        font-weight: normal;
+        color: $bone;
+        letter-spacing: -0.5px;
+        @include media(media1199) {
+            font-size: $p-l;
+        }
+        @include media(media599) {
+            font-size: $btn;
+            top: $margin-30;
+            right: $margin-30;
+        }
+    }
+    &__line {
+        height: 1px;
+        background-color: $bone;
+        position: absolute;
+        top: 100px;
+        left: $margin-50;
+        right: $margin-50;
+    }
+}

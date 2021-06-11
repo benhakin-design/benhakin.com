@@ -1,0 +1,49 @@
+@import "media-queries";
+//colors
+$black: #171717;
+$white: #ffffff;
+$bone: #dfd3c3;
+$morning-blue: #89b0ae;
+$golfscape-green: #52d76c;
+$ogc-color: #4f4f4f;
+//fonts
+$h1: 24.5vw;
+$h1-gs: 19vw;
+$h1-2: 14vw;
+$h2: 60px;
+$h3: 34px;
+$sub: 34px;
+$h3-c: 26px;
+$h4: 24px;
+$p: 18px;
+$btn: 18px;
+$btn-sm: 12px;
+$logo: 18px;
+//spacing
+$margin-10: 10px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-50: 50px;
+$margin-70: 70px;
+//1500px + SCREEN
+$h1-l: 150px;
+$h4-l: 36px;
+$p-l: 20px;
+$logo-l: 20px;
+//TABLET
+$h1-t: 90px;
+$h4-t: 36px;
+//MOBILE
+$h1-m: 16vw;
+$h1-m-c: 55px;
+$h2-m: 30px;
+$btn-m: 14px;
+//letter spacing
+$l-s-m: -0.5px;
+//mobile class
+.section-spacing {
+    margin-top: 50px;
+    @include media(media599) {
+        margin-top: 30px;
+    }
+}

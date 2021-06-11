@@ -1,0 +1,50 @@
+@import "settings";
+.btn-main {
+    font-family: sat_reg;
+    font-weight: normal;
+    color: $bone;
+    font-size: $btn;
+    background-color: transparent;
+    padding: 12px 25px;
+    border-radius: 35px;
+    border: 1px $bone solid;
+    &:hover {
+        color: $black;
+        background-color: $bone;
+    }
+}
+
+.btn-small {
+    font-family: sat_reg;
+    font-weight: normal;
+    color: $bone;
+    font-size: $btn-sm;
+    background-color: transparent;
+    padding: 10px 23px;
+    border-radius: 35px;
+    border: 1px $bone solid;
+    &:hover {
+        color: $black;
+        background-color: $bone;
+    }
+}
+
+//contact
+.btn-contact {
+    font-family: sat_reg;
+    font-size: $btn;
+    background-color: transparent;
+    color: $bone;
+    padding: 12px 25px;
+    margin: 15px;
+    border-radius: 35px;
+    border: 1px $bone solid;
+    &:hover {
+        color: $black;
+        background-color: $bone;
+    }
+    @include media(media599) {
+        font-size: $btn;
+        margin: 20px 10px;
+    }
+}

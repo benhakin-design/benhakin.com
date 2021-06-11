@@ -1,0 +1,24 @@
+@import "../base/buttons";
+@import "../base/fonts";
+@import "../base/globals";
+@import "../base/media-queries";
+@import "../base/settings";
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99;
+    pointer-events: none;
+    .loading-screen {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        background-color: $bone;
+        width: 0%;
+        height: 100%;
+    }
+}
